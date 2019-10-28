@@ -53,8 +53,8 @@ parser.add_argument('--pool', metavar='POOL', default='max_ent',
                     help='pooling type: ' +
                         ' | '.join(pool_names) +
                         ' (default: max_ent)')
-parser.add_argument('--config-name', default='imagenet_largemargin', type=str, metavar='CONFIG',
-                    help='config name in config file (default: imagenet_largemargin)')
+parser.add_argument('--config-name', default='imagenet', type=str, metavar='CONFIG',
+                    help='config name in config file (default: imagenet)')
 parser.add_argument('--pretrained', dest='pretrained', action='store_true',
                     help='use pre-trained model')
 parser.add_argument('--seed', default=None, type=int,
