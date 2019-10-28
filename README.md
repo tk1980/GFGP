@@ -63,13 +63,13 @@ pool = MaxEntPoolingCuda2d(num_features=num_features, kernel_size=kernel_size, s
 For example, the ResNet-50 with the GFGP+Max-Ent pooling on ImageNet is also trained by
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet_train.py  --dataset imagenet  --data ./datasets/imagenet12/images/  --arch resnet50 --pool max_ent  --config-name imagenet_largemargin  --out-dir ./result/imagenet/vgg16bow_bn/LargeMarginInSoftmax/  --dist-url 'tcp://127.0.0.1:8080'  --dist-backend 'nccl'  --multiprocessing-distributed  --world-size 1  --rank 0
+CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet_train.py  --dataset imagenet  --data ./datasets/imagenet12/images/  --arch resnet50 --pool max_ent  --config-name imagenet_largemargin  --out-dir ./results/imagenet/resnet50/max_ent/  --dist-url 'tcp://127.0.0.1:8080'  --dist-backend 'nccl'  --multiprocessing-distributed  --world-size 1  --rank 0
 ```
 
 Note that the ImageNet dataset must be downloaded at `./datasets/imagenet12/` before the training.
 
 ## Results
-These performance results are not the same as those reported in the paper because the methods are implemented by MatConvNet in the paper and accordingly trained in a (slightly) different training procedure.
+These performance results are not the same as those reported in the paper because the methods were implemented by MatConvNet in the paper and accordingly trained in a (slightly) different training procedure.
 
 #### ImageNet
 
