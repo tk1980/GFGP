@@ -44,7 +44,7 @@ Figure: GFGP Architecture
 
 ### Compile
 Compile the maximum-entropy pooling module as follows.
-```python
+```bash
 cd models/modules/maxentpool_cuda
 python setup.py build
 cp build/lib.linux-<LINUX_ARCH>-<PYTHON_VER>/* build/
