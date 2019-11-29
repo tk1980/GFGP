@@ -97,3 +97,7 @@ These performance results are not the same as those reported in the paper becaus
 [4] S. Xie, R. Girshick, P. Dollar, Z. Tu, and K. He. "Aggregated Residual Transformations For Deep Neural Networks." In CVPR, pages 5987–5995, 2017.
 
 [5] G. Huang, Z. Liu, L. Maaten and K.Q. Weinberger. "Densely Connected Convolutional Networks." In CVPR, pages 2261-2269, 2017.
+
+
+## Contact
+takumi.kobayashi (At) aist.go.jp
